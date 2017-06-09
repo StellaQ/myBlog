@@ -1,4 +1,5 @@
-node_modules
-content/apps
-content/data
-content/images
+node_modules/
+content/apps/
+content/data/
+content/images/
+package.json
