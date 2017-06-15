@@ -1,27 +1,25 @@
 <!doctype html>
 <html class="no-js">
   <head>
-      {{! Document Settings }}
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{! Document Settings }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      {{! Page Meta }}
-      <title>{{@blog.title}}</title>
-      <meta name="description" content="{{@blog.description}}">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{! Page Meta }}
+    <title>{{@blog.title}}</title>
+    <meta name="description" content="{{@blog.description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-      <link rel="shortcut icon" href="{{asset "img/x1.jpg"}}">
-      <link rel="stylesheet" href="{{asset "css/styles.css"}}">
-      {{ghost_head}}
-      <script src="{{asset "js/vendor/modernizr-2.8.0.min.js"}}"></script>
+    <link rel="shortcut icon" href="{{asset "img/x1.jpg"}}">
+    <link rel="stylesheet" href="{{asset "css/styles.css"}}">
+    {{ghost_head}}
+    <script src="{{asset "js/vendor/modernizr-2.8.0.min.js"}}"></script>
   </head>
   <body>
-    <img class="plane" src="{{asset "img/paper.svg"}}">
     <div class="lateral">
       <aside class="author">
-
         <img class="profile-image" src="{{asset "img/x1.jpg"}}" alt="" />
         <p class="name"><strong>Stella</strong></p>
         <p class="about"></p>
@@ -33,28 +31,20 @@
           <li><a class="icon-github" href="https://github.com/StellaQ" target="_blank" title="Fork me on Github"></a></li>
           {{!-- <li><a class="icon-instagram" href="" target="_blank" title="Instagram"></a></li> --}}
         </ul>
-
       </aside>
     </div>
+
     <div class="{{body_class}} home">
       <!--[if lt IE 8]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <header class="site-header">
-
-        <h2><a class="logo ir" href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a></h2>
-      </header>
-
       {{{body}}}
 
       <footer class="main-footer">
         <div class="container clearfix">
-
-            <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
-            {{!-- <p>All content copyright <a href="http://leonidasv.com" title="Leonidas Villeneuve">Leonidas Villeneuve</a> &copy; 2017. All rights reserved.</p>
-            <p>Proudly published with Ghost. Theme designed by <a href="http://leonidasv.com" title="Leonidas Villeneuve">Leonidas Villeneuve</a>, based on concept by <a href="http://blog.rriegger.com/" title="Raphael Riegger - UI/UX Designer">Raphael Riegger</a>.</p> --}}
-
+          <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
+          <p>Proudly published with <a href="https://github.com/tryghost/ghost" title="Ghost">Ghost</a>.</p>
         </div>
       </footer>
 

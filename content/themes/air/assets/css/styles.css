@@ -438,15 +438,8 @@ th {
 .icon-github:before {
   content: '\e80a'; }
 
-/* '' */
 /* -----------------------------------------------------------------------------
    -----------------------------------------------------------------------------
-
-   Theme: Minimalist Theme
-   Version: 1.0
-   Author: Raphael Riegger (http://rriegger.com)
-   License: Apache License Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
-
    -----------------------------------------------------------------------------
    -----------------------------------------------------------------------------*/
 body {
@@ -495,10 +488,10 @@ hr {
 }
 
 .content {
-  width: 50%;
-  margin-right: 25%;
-  margin-top: 5%;
-  float: right; }
+  width:90%;
+  margin: 0 5%;
+  float: right;
+}
 
 .site-header {
   display: none;
@@ -535,16 +528,20 @@ hr {
 .profile-image {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  border-radius: 100%; 
+  border-radius: 100%;
   width: 118px;
   height: 118px;
 }
 
 .post h2 {
   margin-top: 0; }
-
+.post h3{
+  margin: 10px 0;
+}
 .post p {
-  line-height: 28px; }
+  line-height: 28px;
+  text-align: justify;
+}
 
 .post h2 a,
 .post-template h1 {
@@ -560,21 +557,40 @@ hr {
   font-weight: 700; }
 
 .post {
-  margin-bottom: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #ececec; }
 
 .post img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
+.post .read-more{
+  float: right;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fff;
+  color: #217a86;
+}
+.post .read-more:hover{
+  background-color: #217a86;
+  color: #fff;
+}
 
 .post-info {
-  color: #a2a2a2;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin-bottom: 40px;
-  line-height: 30px; }
+  font-size: 14px;
+  line-height: 20px;
+  color: #867979;
+}
+.post-info a{
+  background-color: #fff;
+  color: #217a86;
+}
+.post-info a:hover{
+  background-color: #217a86;
+  color: #fff;
+}
 
 .share-buttons {
   list-style: none;
@@ -620,7 +636,7 @@ hr {
   position: relative;
   height: 35px;
   width: 100%;
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 .btn {
   border: solid 1px #ececec;
@@ -698,8 +714,8 @@ hr {
   color: #dddddd; }
 
 .author p.link {
-  margin-bottom: 10px; 
-  color: white;  
+  margin-bottom: 10px;
+  color: white;
   margin-top:10px;
   font-size:22px;
   font-family: Roboto;
@@ -752,11 +768,11 @@ body.post-template .site-header h2 .logo {
   position: fixed;
   margin-top: 70px;
   z-index: 1;
-  
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1799px) {
   .container {
-    width: 100%; } 
+    width: 100%; }
 
   .plane {
     width:300px;
@@ -764,29 +780,23 @@ body.post-template .site-header h2 .logo {
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
   .container {
-    width: 100%; } 
+    width: 100%; }
 
   .plane {
     width:250px;
-    margin-top: 20px;} 
-  .content { 
-    width:80%;
-    margin-right: 15%;
-    margin-top: 5%;}
+    margin-top: 20px;}
+
 }
 
 @media only screen and (min-width: 720px) and (max-width: 799px) {
   .container {
-    width: 100%; } 
+    width: 100%; }
 
   .plane {
     width:200px;
-    margin-top: 20px;} 
+    margin-top: 20px;}
 
-  .content { 
-    width:80%;
-    margin-right: 15%;
-    margin-top: 5%;} }
+}
 
 @media only screen and (max-width: 719px) {
   .container {
@@ -808,12 +818,12 @@ body.post-template .site-header h2 .logo {
     width: 90px;
     height: 74px;
     margin: -45px 0 0 -37px;
-    background-size: 90px 74px; } 
+    background-size: 90px 74px; }
   .lateral {
     position: inherit !important;
     width: 100% !important;
     height: 450px !important; }
-  .home { 
+  .home {
     width:100% !important;}
   .post h2 a {
     font-size: 30px !important;}
@@ -847,11 +857,9 @@ body.post-template .site-header h2 .logo {
   clear: both; }
 
 .lateral {
-/*  background-color: #072035; */
+  width: 25%;
   height: 100%;
   position: fixed;
-  width: 30%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e3d66+0,072035+100 */
   background: #c76c8d; /* Old browsers */
   background: -moz-linear-gradient(top,  #c76c8d 0%, #b1617e 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #c76c8d 0%,#b1617e 100%); /* Chrome10-25,Safari5.1-6 */
@@ -861,7 +869,7 @@ body.post-template .site-header h2 .logo {
 }
 
 .home {
-  width: 70%;
+  width: 75%;
   float: right;
 }
 
