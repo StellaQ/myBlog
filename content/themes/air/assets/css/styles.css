@@ -622,9 +622,9 @@ hr {
 
 .tag-title {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  border-bottom: 1px solid #ececec;
-  margin-bottom: 40px; }
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #222;
+}
 
 .tag-title h1 {
   font-size: 28px;
@@ -632,9 +632,13 @@ hr {
   margin-bottom: 40px; }
 
 .tag-title p {
-  color: #979797;
+  color: #867979;
   font-size: 14px;
   margin-bottom: 0; }
+
+.tag-title p span{
+  color: #222;
+}
 
 .pagination {
   position: relative;
