@@ -12,7 +12,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <link rel="shortcut icon" href="{{asset "img/x1.jpg"}}">
+    <link rel="shortcut icon" href="{{asset "img/1111.ico"}}">
     <link rel="stylesheet" href="{{asset "css/styles.css"}}">
     {{ghost_head}}
     <script src="{{asset "js/vendor/modernizr-2.8.0.min.js"}}"></script>
@@ -20,15 +20,24 @@
   <body>
     <div class="lateral">
       <aside class="author">
-        <img class="profile-image" src="{{asset "img/x1.jpg"}}" alt="" />
-        <p class="name"><strong>Stella</strong></p>
-        <p class="about"></p>
-        <p class="address"></p>
-        <p class="link"><a href="" title=""></a></p>
-
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{!-- <img class="profile-image" src="{{asset "img/x1.jpg"}}" alt="" /> --}}
+        <p class="name">
+          {{#if @blog.description}}
+            <a href="{{@blog.url}}">{{@blog.title}}</a>
+          {{/if}}
+        </p>
+        <p class="about">
+          {{#if @blog.description}}<span>{{@blog.description}}</span>{{/if}}
+        </p>
+        {{!-- <p class="address"></p> --}}
+        {{!-- <p class="link"><a href="" title=""></a></p> --}}
         <ul class="social">
           {{!-- <li><a class="icon-facebook-squared" href="" target="_blank" title="Facebook"></a></li> --}}
           <li><a class="icon-github" href="https://github.com/StellaQ" target="_blank" title="Fork me on Github"></a></li>
+          <li>
+            <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
+          </li>
           {{!-- <li><a class="icon-instagram" href="" target="_blank" title="Instagram"></a></li> --}}
         </ul>
       </aside>
@@ -43,7 +52,6 @@
 
       <footer class="main-footer">
         <div class="container clearfix">
-          <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
           <p>Proudly published with <a href="https://github.com/tryghost/ghost" title="Ghost">Ghost</a>.</p>
         </div>
       </footer>
