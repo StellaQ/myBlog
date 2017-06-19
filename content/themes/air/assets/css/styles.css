@@ -579,6 +579,17 @@ hr {
   color: #fff;
 }
 
+.post .social-share .social-share-icon:before{
+  font-family: "socialshare" !important;
+}
+.post .social-share .icon-heart{
+  color: #f37790;
+  border: 1px solid #f37790;
+}
+.post .social-share .icon-heart:hover{
+  background-color: #f37790;
+}
+
 .post-info {
   font-family: "Roboto", sans-serif;
   font-size: 14px;

@@ -1,4 +1,5 @@
 {{!< default}}
+<link rel="stylesheet" href="{{asset "js/sharejs/css/share.min.css"}}">
 <div class="container clearfix">
   <main role="main" class="content">
 
@@ -16,19 +17,36 @@
 
       {{content}}
 
-      {{!-- <ul class="share-buttons">
-        <li>Share this article:</li>
-        <li><a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a></li>
-        <li><a class="icon-twitter"  href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
-            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this page"></a></li>
-        <li><a class="icon-gplus"  href="https://plus.google.com/share?url={{url absolute="true"}}"
-           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+"></a></li>
-        <li><a class="icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkenIn"></a></li>
-      </ul> --}}
-
+      <div class="social-share" data-mode="prepend"></div>
     </article>
     {{/post}}
 
   </main>
+  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{{asset "js/sharejs/js/jquery.share.min.js"}}"></script>
+  <script>
+  var $config = {
+    url: location.href,
+    source: $(document.head).find('[name=site],[name=Site]').attr('content')||document.title,
+    title: $('article h3:first').text() ||
+    document.title,
+    description: $('article p:first').text().substring(0,60) || '',
+    image: $('img:first').prop('src') || '',
+    sites: ['douban','weibo','wechat','qq','qzone'],
+    wechatQrcodeTitle   : "微信扫一扫：分享",
+    wechatQrcodeHelper  : '<p style="text-align:center;">微信里点“发现”，扫一下</p><p style="text-align:center;">二维码便可将本文分享至朋友圈。</p>',
+  };
+  $('.social-share').share($config);
+  </script>
 </div>
+
+
+
+
+
+
+
+
+
+
+
