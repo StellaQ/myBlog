@@ -944,3 +944,45 @@ ul > li > a {
 .link > a:hover {
        color: white;
   }
+
+#special-search form{
+  margin: 20px 0;
+}
+#special-search #search-field:focus{
+  outline: unset;
+}
+#special-search form input[type='submit']{
+  border: unset;
+  background: #217a86;
+  color: #fff;
+}
+#special-search form input[type='submit']:focus{
+  outline: unset;
+}
+#special-search #results p:first-child{
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #222;
+  margin-bottom: 10px;
+  color: #222;
+}
+#special-search #results a{
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999;
+  margin-bottom: 10px;
+  line-height: 28px;
+  color: #222;
+}
+#special-search #results a h2{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+#special-search #results a p{
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+#special-search #results a h4{
+  display: none;
+}
