@@ -25,6 +25,9 @@
   <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
   <script src="{{asset "js/sharejs/js/jquery.share.min.js"}}"></script>
   <script>
+  $(document).ready(function(){
+    document.title = $('article h3:first').text();
+  });
   var $config = {
     url: location.href,
     source: $(document.head).find('[name=site],[name=Site]').attr('content')||document.title,
