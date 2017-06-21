@@ -846,6 +846,7 @@ body.post-template .site-header h2 .logo {
 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1799px) {
+  /*超大屏幕*/
   .container {
     width: 100%; }
 
@@ -854,6 +855,7 @@ body.post-template .site-header h2 .logo {
     margin-top: 30px;} }
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
+  /*小屏幕类似mac*/
   .container {
     width: 100%; }
 
@@ -864,6 +866,7 @@ body.post-template .site-header h2 .logo {
 }
 
 @media only screen and (min-width: 720px) and (max-width: 799px) {
+  /*类似pad*/
   .container {
     width: 100%; }
 
@@ -874,6 +877,7 @@ body.post-template .site-header h2 .logo {
 }
 
 @media only screen and (max-width: 719px) {
+  /*移动端*/
   .container {
     width: 90%;
     padding-top: 25px; }
@@ -882,7 +886,7 @@ body.post-template .site-header h2 .logo {
     margin: 0; }
 
   .author {
-    padding-top: 60px; }
+    padding-top: 100px; }
   .site-header,
   body.post-template > .site-header {
     height: 180px;
@@ -897,7 +901,16 @@ body.post-template .site-header h2 .logo {
   .lateral {
     position: inherit !important;
     width: 100% !important;
-    height: 450px !important; }
+    height: 300px !important;
+    background-size: 100% 130%;
+  }
+  .lateral .author{
+    top: 150px !important;
+  }
+  .lateral .blog-logo{
+    width: 40px !important;
+    height: 40px !important;
+  }
   .home {
     width:100% !important;}
   .post h2 a {
