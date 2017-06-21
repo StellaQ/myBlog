@@ -1,0 +1,79 @@
+{{!< default}}
+<div class="container clearfix">
+  <main role="main" class="content" id="file">
+    {{!-- <section>
+      <h3><a href="">实现</a></h3>
+      <div>
+        <div class="subcontainer">
+          <h4><a href="">css3</a></h4>
+          <ul>
+            <li><a href="">css31</a></li>
+            <li><a href="">css32</a></li>
+          </ul>
+        </div>
+        <div class="subcontainer">
+          <h4><a href="">html5</a></h4>
+          <ul>
+            <li><a href="">html51</a></li>
+            <li><a href="">html52</a></li>
+          </ul>
+        </div>
+        <div class="subcontainer">
+          <h4><a href="">hack</a></h4>
+          <ul>
+            <li><a href="">html51</a></li>
+            <li><a href="">html52</a></li>
+          </ul>
+        </div>
+      </div>
+    </section> --}}
+  </main>
+  <script>
+  window.onload = function () {
+    var mainFile = document.getElementById('file');
+    var arrConfig = [fileConfig1];
+    var strHtml = '';
+    for (var i = 0; i < arrConfig.length; i++) {
+      strHtml += replaceHtml(arrConfig[i]);
+    }
+    mainFile.innerHTML = strHtml;
+  };
+  var fileConfig1 = [
+    {tagname: '实现', tagid: 'shixian'},
+    [
+      {tagname: 'css3', tagid: 'css3'},
+      {tagname: 'html5', tagid: 'html5'},
+      {tagname: 'hack', tagid: 'hack'}
+    ],
+    [
+      {connectid: 'css3', postname: 'css31', postid: 'css31'},
+      {connectid: 'css3', postname: 'css32', postid: 'css32'},
+      {connectid: 'html5', postname: 'html51', postid: 'html51'},
+      {connectid: 'html5', postname: 'html52', postid: 'html52'},
+      {connectid: 'hack', postname: 'hack1', postid: 'hack1'},
+      {connectid: 'hack', postname: 'hack2', postid: 'hack2'}
+    ]
+  ];
+  function replaceHtml (fileConfig){
+    var str = '';
+    str = '<section><h3><a href="/tag/' + fileConfig[0].tagid + '/">' + fileConfig[0].tagname + '</a></h3>' +'<div>';
+    for (var i = 0; i < fileConfig[1].length; i++) {
+      var arr = [];
+      var strli = '';
+      for (var j = 0; j < fileConfig[2].length; j++) {
+        if (fileConfig[2][j].connectid == fileConfig[1][i].tagid) {
+          arr.push(fileConfig[2][j])
+        };
+      };
+      if(arr.length>0){
+        for (var x = 0; x < arr.length; x++) {
+          strli += '<li><a href="/'+ arr[x].postid +'/">'+ arr[x].postname +'</a></li>'
+        }
+      };
+      str += '<div class="subcontainer"><h4><a href="/tag/'+ fileConfig[1][i].tagid +'/">'+ fileConfig[1][i].tagname +'</a></h4><ul>' + strli + '</ul></div>';
+    }
+    str += '</div></section>';
+    return str;
+  };
+  </script>
+</div>

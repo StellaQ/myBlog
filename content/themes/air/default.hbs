@@ -21,7 +21,6 @@
     <div class="lateral">
       <aside class="author">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{!-- <img class="profile-image" src="{{asset "img/x1.jpg"}}" alt="" /> --}}
         <p class="name">
           {{#if @blog.description}}
             <a href="{{@blog.url}}">{{@blog.title}}</a>
@@ -30,23 +29,21 @@
         <p class="about">
           {{#if @blog.description}}<span>{{@blog.description}}</span>{{/if}}
         </p>
-        {{!-- <p class="address"></p> --}}
-        {{!-- <p class="link"><a href="" title=""></a></p> --}}
+        <ul class="menu">
+          <li><a href="/">首页</a></li>
+          <li><a href="/file">归档</a></li>
+        </ul>
         <ul class="social">
-          {{!-- <li><a class="icon-facebook-squared" href="" target="_blank" title="Facebook"></a></li> --}}
           <li><a class="icon-github" href="https://github.com/StellaQ" target="_blank" title="Fork me on Github"></a></li>
           <li>
             <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
           </li>
-          <li><a class="icon-search" href="/search" title="search"></a></li>
+          <li><a class="icon-search" href="/search" title="Search"></a></li>
         </ul>
       </aside>
     </div>
 
     <div class="{{body_class}} home">
-      <!--[if lt IE 8]>
-          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
 
       {{{body}}}
 

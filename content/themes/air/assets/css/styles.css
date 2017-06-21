@@ -935,14 +935,13 @@ body.post-template .site-header h2 .logo {
   position: fixed;
   background-image: url(../img/galaxy.jpg);
   background-size: 110% 100%;
-  /*background: #fff;  Old browsers */
-  /*background: -moz-linear-gradient(top,  #cdfbf9 0%, #9eefe0 100%); /* FF3.6-15 */
-  /*background: -webkit-linear-gradient(top,  #cdfbf9 0%,#9eefe0 100%); /* Chrome10-25,Safari5.1-6 */
-  /*background: linear-gradient(to bottom,  #cdfbf9 0%,#9eefe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdfbf9', endColorstr='#9eefe0',GradientType=0 ); /* IE6-9 */
 }
 .lateral .author{
-  margin-top: 45%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -50%;
 }
 .lateral .blog-logo{
   display: block;
@@ -960,6 +959,18 @@ body.post-template .site-header h2 .logo {
 }
 .lateral .name a:hover{
   color: #fff;
+}
+.lateral .menu{
+  padding: 0;
+  margin: 10px 0;
+
+}
+.lateral .menu li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+.lateral .menu li a{
+  color: #ddd;
 }
 
 .home {
@@ -1019,4 +1030,59 @@ ul > li > a {
 }
 #special-search #results a h4{
   display: none;
+}
+
+#file *{
+  padding: 0;
+  margin: 0;
+}
+#file{
+  margin-top: 10px;
+}
+#file li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+#file section{
+  display: flex;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #217a86;
+}
+#file h3,#file h4{
+  margin-right: 10px;
+}
+#file h3{
+  width: 100px;
+}
+#file h4{
+  width: 250px;
+}
+#file .subcontainer{
+  display: flex;
+  margin-bottom: 10px;
+}
+#file a{
+  padding: 1px 2px;
+  border-radius: 2px;
+  color: #217a86;
+  background-color: #fff;
+}
+#file a:hover{
+  color: #fff;
+  background-color: #217a86;
+}
+#file h3 a{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+#file h4 a{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
+#file ul li a{
+  font-size: 14px;
+  line-height: 20px;
 }
