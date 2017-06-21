@@ -969,10 +969,13 @@ body.post-template .site-header h2 .logo {
 }
 .lateral .menu li{
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .lateral .menu li a{
-  color: #ddd;
+  padding: 1px 2px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #217a86;
 }
 
 .home {
