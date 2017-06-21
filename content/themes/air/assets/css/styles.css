@@ -612,7 +612,9 @@ hr {
   background-color: #217a86;
   color: #fff;
 }
-
+.post .social-share{
+  margin-top: 50px;
+}
 .post .social-share .social-share-icon:before{
   font-family: "socialshare" !important;
 }
@@ -933,7 +935,7 @@ body.post-template .site-header h2 .logo {
   width: 25%;
   height: 100%;
   position: fixed;
-  background-image: url(../img/galaxy.jpg);
+  background-image: url(../img/galaxy1.jpg);
   background-size: 110% 100%;
 }
 .lateral .author{
