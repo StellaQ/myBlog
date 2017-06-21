@@ -1,5 +1,6 @@
 {{!< default}}
 <link rel="stylesheet" href="{{asset "js/sharejs/css/share.min.css"}}">
+<link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
 <div class="container clearfix">
   <main role="main" class="content">
 
@@ -23,7 +24,9 @@
 
   </main>
   <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
   <script src="{{asset "js/sharejs/js/jquery.share.min.js"}}"></script>
+  <script >hljs.initHighlightingOnLoad();</script>
   <script>
   $(document).ready(function(){
     document.title = $('article h3:first').text();
