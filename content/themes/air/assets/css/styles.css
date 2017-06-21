@@ -894,7 +894,32 @@ body.post-template .site-header h2 .logo {
     width:100% !important;}
 
 }
+@media only screen and (min-width: 200px) and (max-width: 329px) {
+  /*4s/5s*/
+  /*这段media query代码要放在下段代码前面，否则不起作用。wyh?*/
+  .container {
+    width: 90%;
+    padding-top: 25px; }
+  .author, .content {
+    width: 100%;
+    margin: 0; }
 
+  .author {
+    padding-top: 100px; }
+  .lateral {
+    position: inherit !important;
+    width: 100% !important;
+    height: 300px !important;
+    background-size: 100% 130%;
+  }
+  .lateral .author{
+    top: 120px !important;
+  }
+  .lateral .blog-logo{
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
 /*@media only screen and (max-width: 799px) {*/
 @media only screen and (min-width: 330px) and (max-width: 719px) {
   /*移动端*/
@@ -942,35 +967,7 @@ body.post-template .site-header h2 .logo {
     margin-top: 10px;
     position:absolute;} }
 }
-@media only screen and (max-width: 329px) {
-  /*4s 5s*/
-  .container {
-    width: 90%;
-    padding-top: 25px; }
-  .author, .content {
-    width: 100%;
-    margin: 0; }
 
-  .author {
-    padding-top: 110px; }
-
-  .lateral {
-    position: inherit !important;
-    width: 100% !important;
-    height: 300px !important;
-    background-size: 100% 130%;
-  }
-  .lateral .author{
-    top: 320px !important;
-  }
-  .lateral .blog-logo{
-    width: 40px !important;
-    height: 40px !important;
-  }
-  .home {
-    width:100% !important;}
-
-}
 .ir {
   background-color: transparent;
   border: 0;
