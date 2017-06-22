@@ -575,6 +575,7 @@ hr {
 .post p {
   line-height: 28px;
   text-align: justify;
+  word-break: break-all;
 }
 
 .post h2 a,
@@ -684,7 +685,10 @@ hr {
   margin-bottom: 0; }
 
 .tag-title p span{
-  color: #222;
+  color: #fff;
+  background-color: #217a86;
+  padding: 1px 2px;
+  border-radius: 2px;
 }
 
 .pagination {
@@ -778,7 +782,7 @@ hr {
 .author p.about {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
-  margin: 10px auto;
+  margin: 12px auto;
   font-size: 16px;
   color: #dddddd;
 }
@@ -909,11 +913,11 @@ body.post-template .site-header h2 .logo {
   .lateral {
     position: inherit !important;
     width: 100% !important;
-    height: 300px !important;
-    background-size: 100% 130%;
+    height: 250px !important;
+    background-size: 100% 130% !important;
   }
   .lateral .author{
-    top: 120px !important;
+    top: 75px !important;
   }
   .lateral .blog-logo{
     width: 40px !important;
@@ -922,6 +926,10 @@ body.post-template .site-header h2 .logo {
 
   .home {
     width:100% !important;}
+
+  .main-footer p{
+    margin: 0;
+  }
 }
 /*@media only screen and (max-width: 799px) {*/
 @media only screen and (min-width: 330px) and (max-width: 719px) {
@@ -950,10 +958,10 @@ body.post-template .site-header h2 .logo {
     position: inherit !important;
     width: 100% !important;
     height: 300px !important;
-    background-size: 100% 130%;
+    background-size: 100% 130% !important;
   }
   .lateral .author{
-    top: 150px !important;
+    top: 130px !important;
   }
   .lateral .blog-logo{
     width: 40px !important;
@@ -961,6 +969,9 @@ body.post-template .site-header h2 .logo {
   }
   .home {
     width:100% !important;}
+  .main-footer p{
+    margin: 0;
+  }
   .post h2 a {
     font-size: 30px !important;}
   .post-info {
@@ -994,11 +1005,11 @@ body.post-template .site-header h2 .logo {
   clear: both; }
 
 .lateral {
-  width: 25%;
+  width: 20%;
   height: 100%;
   position: fixed;
   background-image: url(../img/galaxy1.jpg);
-  background-size: 110% 100%;
+  background-size: 120% 100%;
 }
 .lateral .author{
   width: 100%;
@@ -1009,8 +1020,8 @@ body.post-template .site-header h2 .logo {
 }
 .lateral .blog-logo{
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
 }
 .lateral .blog-logo img{
@@ -1031,7 +1042,7 @@ body.post-template .site-header h2 .logo {
 }
 .lateral .menu li{
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .lateral .menu li a{
   padding: 1px 2px;
@@ -1041,7 +1052,7 @@ body.post-template .site-header h2 .logo {
 }
 
 .home {
-  width: 75%;
+  width: 80%;
   float: right;
 }
 
@@ -1097,6 +1108,7 @@ ul > li > a {
   margin-bottom: 10px;
   line-height: 28px;
   color: #222;
+  word-break: break-all;
 }
 #special-search #results a h2{
   padding: 0;
@@ -1165,4 +1177,18 @@ ul > li > a {
 #file ul li a{
   font-size: 14px;
   line-height: 20px;
+}
+
+.tag-cloud{
+  padding: 0;
+}
+.tag-cloud li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.tag-cloud li a{
+  padding: 1px 2px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #217a86;
 }

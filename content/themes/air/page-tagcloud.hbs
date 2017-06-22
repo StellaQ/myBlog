@@ -1,0 +1,16 @@
+{{!< default}}
+<div class="container clearfix">
+  <main role="main" class="content">
+  {{!-- {{tag_cloud limit="all"}} --}}
+  <ul class="tag-cloud">
+
+  {{#get "tags" limit="all" include="count.posts" order="count.posts desc" }}
+    {{#foreach tags}}
+        <li><a href="/tag/{{slug}}">{{name}} ({{count.posts}})</a></li>
+    {{/foreach}}
+  {{/get}}
+
+  </ul>
+
+  </main>
+</div>
