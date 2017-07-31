@@ -609,7 +609,7 @@ hr {
   border-radius: 2px;
   font-size: 14px;
   line-height: 20px;
-  background-color: #fff;
+  background-color: ghostwhite;
   color: #217a86;
 }
 .post .read-more:hover{
@@ -639,7 +639,7 @@ hr {
 .post-info a{
   padding: 1px 2px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: ghostwhite;
   color: #217a86;
 }
 .post-info a:hover{
@@ -749,7 +749,7 @@ hr {
   font-size: 14px;
   line-height: 30px;
   color: #217a86;
-  background-color: #fff;
+  background-color: ghostwhite;
 }
 .pagination .btn:hover{
   color: #fff;
@@ -891,6 +891,8 @@ body.post-template .site-header h2 .logo {
     width: 100% !important;
     height: 300px !important;
     background-size: 100% 130%;
+    border-right: 0px !important;
+    border-bottom: 1px solid #ececec;
   }
   .lateral .author{
     top: 320px !important;
@@ -920,6 +922,8 @@ body.post-template .site-header h2 .logo {
     width: 100% !important;
     height: 250px !important;
     background-size: 100% 130% !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid #ececec;
   }
   .lateral .author{
     top: 75px !important;
@@ -964,6 +968,8 @@ body.post-template .site-header h2 .logo {
     width: 100% !important;
     height: 300px !important;
     background-size: 100% 130% !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid #ececec;
   }
   .lateral .author{
     top: 130px !important;
@@ -1055,7 +1061,7 @@ body.post-template .site-header h2 .logo {
   padding: 1px 2px;
   border: 1px solid #217a86;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: ghostwhite;
   color: #217a86;
 }
 .lateral .menu li a:hover{
